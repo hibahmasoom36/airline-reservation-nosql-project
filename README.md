@@ -1,34 +1,26 @@
 # Airline Reservation System — NoSQL Project
 
 ## 📌 Overview
-This project was completed as part of **DSE6210: Big Data SQL and NoSQL**.  
-It explores how an airline reservation system can be modeled using **NoSQL (MongoDB)** compared to a traditional **relational database (PostgreSQL)**, and discusses tradeoffs between flexibility, scalability, and consistency.
+This project explores how an airline reservation system can be modeled using **NoSQL (MongoDB)** compared to a traditional **relational database (PostgreSQL)**. It was completed as part of **DSE6210: Big Data SQL and NoSQL**.
 
 ## 🎯 Objectives
 - Represent airline reservation data in **JSON document format**.  
 - Compare relational and document-oriented models for the same system.  
-- Evaluate the advantages and disadvantages of MongoDB in this use case.  
-- Propose a **hybrid solution** that balances scalability with transactional reliability.  
+- Evaluate MongoDB’s advantages and disadvantages in this context.  
+- Propose a **hybrid approach** balancing scalability and transactional reliability.  
 
 ## 🗂️ Deliverables
-- **JSON Model (`json-model.json`)** — airline reservation captured in a single NoSQL-style document.  
-- **Final Project Paper (`final-project-paper.pdf`)** — written analysis on RDBMS vs. MongoDB tradeoffs.  
+- `json-model.json` → Airline reservation captured in a single NoSQL-style document.  
+- `final-project-paper.pdf` → Analysis of RDBMS vs. MongoDB tradeoffs.  
 
 ## 🛠️ Key Insights
-- MongoDB reduces join complexity and enables **faster queries** for read-heavy workloads.  
-- Schema-less design allows for **flexible evolution** as flight and reservation data changes.  
-- Horizontal scaling via **sharding** supports high volumes of bookings and real-time updates.  
-- Drawbacks: potential **data redundancy** and weaker **transactional guarantees** compared to RDBMS.  
-- A **hybrid model** — MongoDB for flexible data and PostgreSQL for strict transactions — provides an optimal balance for large-scale airline systems.  
+- MongoDB reduces join complexity and improves read performance.  
+- Schema-less design supports flexible schema evolution.  
+- Sharding enables **horizontal scaling** for high booking volumes.  
+- Challenges: potential redundancy and weaker **transactional guarantees** compared to RDBMS.  
+- A **hybrid model** (MongoDB + PostgreSQL) provides the best of both worlds.  
 
-## 📊 JSON Data Example
-The reservation data includes:
-- Flight details (number, airline, aircraft type, schedule).  
-- Multi-leg itinerary.  
-- Passenger and contact details.  
-- Reservation status, ticket type, travel class.  
-- Payment status and amount.  
-
+## 📊 Example: JSON Snippet
 ```json
 {
     "flight_number": "FL123",
