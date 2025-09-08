@@ -64,3 +64,15 @@ The reservation data includes:
     ]
 }
 
+```
+## 📂 Repo Structure
+/README.md
+
+/json-model.json
+
+/final-project-paper.pdf
+
+## 🔮 Next Steps
+- Expand the **JSON schema** with complex itineraries and loyalty program data.  
+- Test MongoDB Atlas queries against **Postgres joins** to measure tradeoffs.  
+- Prototype a **hybrid design**: MongoDB for flexibility + PostgreSQL for transactions. 
